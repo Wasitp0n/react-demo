@@ -1,11 +1,14 @@
 import React from 'react'
 import classes from './Greeting.module.css'
 
-const Greeting = () => {
+const Greeting = (props) => {
+  // const name = 'John'
+  const { name } = props
+
   return (
     <div className={classes.card}>
       <h3>Welcome!</h3>
-      <p>Men</p>
+      <p>{name}</p>
     </div>
   )
 }
