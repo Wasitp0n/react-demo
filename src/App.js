@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Greeting name="Men" />
+      <Greeting />
       <div className="feed-container">
         {posts.map((post) => {
           return <Post key={post.id} post={post} />
